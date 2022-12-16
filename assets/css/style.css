@@ -1,0 +1,440 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAV E INDEX */
+
+.nav {
+display: flex;
+justify-content: center;
+
+    background-color: #a278b8;
+    font-size: large;
+    height: 62px;
+    align-items: center;
+
+}
+
+
+.nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav-search{
+    position: absolute;
+    right: 10px;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    border: 0px;
+    outline: none;
+    
+}
+
+.link {
+    
+ 
+    padding-left: 45px;
+    padding-right: 45px;
+  
+}
+
+.link:hover {
+    border-radius: 15px;
+    background: rgb(73, 34, 79);
+    transition: background-color .5s;
+   
+}
+
+.listas {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.bodyIndex {
+    background-color: rgb(189, 189, 189);
+}
+
+.encabezado {
+    background-image: url(../img/foto.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.encabezado2>h1 {
+    color: white;
+    font-size: 50px;
+}
+
+
+
+
+.trending {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 15px;
+    font-style: italic;
+    margin: 25px;
+}
+
+.btn {
+    padding: 10px 30px;
+    background-color: #a278b8;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+.tarjeta {
+    border: solid 1px;
+    background-color: rgba(225, 125, 255, 0.103);
+    border-radius: 50px;
+    text-align: center;
+    width: 350;
+    gap: 15px;
+    margin: 15px;
+    padding: 20px;
+
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+
+}
+
+.textos {
+    width: 510px;
+
+}
+
+.titulotarjeta {
+    margin: 10px;
+}
+
+.footer {
+    background-color: #a278b8;
+    
+}
+
+.zapas {
+    border-radius: 50px;
+}
+
+/* FIN NAV E INDEX */
+
+/* Footer */
+
+.footer-derechos{
+height: 20px;
+width: 100%;
+    border: solid 1px;
+    bottom: 10px;
+    background-color: white;
+}
+
+.footer-links{
+    margin-left: 30px;
+    padding: 20px;
+
+
+}
+
+.lista-hijos{
+    list-style-type: none;
+    padding: 2px;
+}
+
+.footer-parrafo{
+    text-align: center;
+}
+
+.JoinUs{
+    color: white;
+    text-decoration: underline;
+}
+
+
+.iconos-div{
+    display: flex;
+    justify-content: center;
+;
+
+}
+
+.iconos{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* FooterFin */
+
+/* CONTACT */
+
+.bodyContact{
+background-color: #a278b8a9;
+
+}
+
+.contactfoto{
+    height: 500px;
+    border: solid 6px;
+    border-color: grey;
+    border-radius: 10px;
+    margin-top: 50px;
+
+}
+
+.headerContact{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.contactTitulo{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 90px;
+    font-style: italic;
+    color: white;
+  
+}
+.contactSub{
+    text-align: center;
+    color: white;
+}
+
+.form{
+    width: 400px;
+    background-color: rgba(128, 128, 128, 0.593);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.controls{
+    width: 100%;
+    padding: 10px;
+    background-color: purple;
+    border-radius: 18px;
+    margin-bottom: 15px;
+    border: 3px solid #769f9f;
+    outline: none;
+
+}
+
+::placeholder{
+    color: white;
+}
+
+.form .btnForm{
+    background-color: #a278b8;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin:  16px 0;
+    font-size: 16px;
+}
+
+.caja1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mapa{
+    margin-top: 15px;
+}
+
+/* CONTACT */
+
+/* AboutUs */
+
+.bodyAboutus{
+    background-color: #a278b8a9;
+}
+
+.encabezadoAboutus{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 25px;
+    
+    
+}
+.principal1{
+  margin: 5px;
+  font-size: 90px;
+  color: white;
+}
+.principal2{
+    margin: 5px;
+    font-style: italic;
+    color: white;
+  }
+
+.principal3{
+  margin-top: 30px;
+  width: 140px;
+  height: 50px;
+  border: solid  #9d2edaa9;
+  border-radius: 10px;
+  font-style: italic;
+  
+}
+
+.principal4{
+    margin-top: 15px;
+    font-size: 60px;
+    color: white;
+  letter-spacing: 5px;
+  color: #c3f4fe;
+  
+}
+
+.tarjetaPadre{
+display: flex;
+justify-content: space-around;
+  margin-top: 25px;
+}
+
+.bloquenegro{
+    width: 325px;
+}
+
+.tarjetasHijo{
+   text-align: center;
+   border: solid;
+  
+
+}
+
+.textosTarjetaA{
+    margin: 10px;
+    width: 300px;
+}
+.tituloTarjetaA{
+    margin: 15px;
+    color: white;
+    font-size: 35px
+}
+
+.iconos-divA{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+;
+}
+
+/* About us FIN */
+
+/* APP */
+
+.bodyApp{
+    background-color: #a278b8a9;
+
+}
+.tituloApp{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    color: white;
+    font-style: italic;
+    
+}
+
+.installbtn{
+    width: 350px;
+    height: 115px;
+    font-size: 30px;
+   
+    background-color: #a278b8;
+    border: solid #000;
+}
+.parrafoInstall{
+    width: 350px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.botonyparrafo{
+    margin-left: 150px;
+    margin-top: 200px;
+    
+}
+
+.mainApp{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.videoapp{
+    margin-top: 110px;
+}
+
+.bodyMerch{
+    background-color: rgb(189, 189, 189);
+}
+
+.merchandising{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-style: italic;
+    margin-top: 50px;
+    text-decoration: overline;
+}
+
+.productosPadre{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.bloqueMerch{
+    width: 250px
+  
+}
+
+.productosHijo{
+ text-align: center;
+ align-items: center;
+ border: solid #a278b8;
+ padding: 30px;
+}
+
+.textoMerch{
+    margin: 10px;
+  color: white;
+  width: 250px;
+}
+
+.textosMerch{
+ font-size: 20px;
+ width: 200px;
+}
+
+.parrafoMerch{
+    width: 250px;
+}
