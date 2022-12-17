@@ -87,9 +87,10 @@ nav ul {
 
 }
 
-.encabezado2>h1 {
+.encabezado2 h1 {
     color: white;
     font-size: 50px;
+   
 }
 
 
@@ -102,6 +103,7 @@ nav ul {
     letter-spacing: 15px;
     font-style: italic;
     margin: 25px;
+   
 }
 
 .btn {
@@ -167,8 +169,6 @@ nav ul {
 /* Footer */
 
 
-footer {}
-
 .footer-derechos {
     height: 20px;
     width: 100%;
@@ -220,11 +220,11 @@ footer {}
 .bodyContact {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 200px auto 100px;
-    grid-template-areas: "nav nav nav nav"
-        "header header header header"
-        "main main main main"
-        "footer footer footer footer";
+    grid-template-rows: 100px 200px auto auto;
+    grid-template-areas: "nav    nav    nav     nav"
+                         "header header header header"
+                          " main   main   main   main"
+                          "footer footer footer footer";
     background-color: #a278b8a9;
 
 }
@@ -252,7 +252,7 @@ footer {}
 .caja1 {
     display: flex;
     justify-content: center;
-
+margin-left: 650px;
 }
 
 footer {
