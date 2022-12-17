@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="bodyContact">
@@ -25,58 +27,35 @@
     </nav>
 
     <header class="headerContact">
-        <img src="/assets/img/contact.jpg" alt="" class="contactfoto">
+
     </header>
-    <br>
 
-    <main>
-        <div class="content">
-            <h1 class="logo">Contact <span>Us</span></h1>
-            <div class="contact-wrapper">
-                <div class="contact-form">
-                    <h3>Contact Us</h3>
-                    <form action="">
-                        <p>
-                            <label for="Nombre">Nombre</label>
-                            <input type="text" name="Nombre">
-                        </p>
-                        <p>
-                            <label for="">Email</label>
-                            <input type="email" name="Email">
+    <main class="mainContact">
+        <h1 class="contactTitulo">Contact Us</h1>
 
-                        </p>
-                        <p>
-                            <label for="">Telefono</label>
-                            <input type="text" name="Telefono">
-                        </p>
-                        <p>
-                            <label for="">Asunto</label>
-                            <input type="text" name="Asunto">
-                        </p>
-                        <p>
-                            <label for="">Mensaje</label>
-                            <textarea name="Mensaje" rows="3"></textarea>
-                        </p>
-                        <p>
-                            <Button type="button">Send</Button>
+        <div class="caja1">
 
-                        </p>
+            <form class="form" action="">
+                <label for=""> Nombre
+                    <input class="controls" type="text" name="nombres" id="nombres">
+                </label>
+                <label for=""> Apellido
+                    <input class="controls" type="text" name="apellidos" id="apellidos">
+                </label>
+                <label for=""> Correo
+                    <input class="controls" type="email" name="correo" id="correo">
+                </label>
+                <label for=""> Mensaje
+                    <textarea class="controls" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
 
-                    </form>
+                    <input type="button" value="Enviar" class="btnForm">
 
-
-                </div>
-                <div class="contact-info">
-<h4>Informacion</h4>
-<ul>
-    <li></li>
-</ul>
-
-                </div>
-            </div>
-
-
+            </form>
+     
         </div>
+        
+
+
 
     </main>
     <aside>
