@@ -7,17 +7,44 @@
 
 /* NAV E INDEX */
 
-.nav {
-display: flex;
-justify-content: center;
+.bodyIndex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto 200px;
+    grid-template-areas: "nav nav nav nav"
+                          "header header header header"
+                         "main main main main"
+                        "footer footer footer footer";
+    ;
+}
 
+.main{
+    grid-area: main;
+}
+.nav .fa-bars {
+    display: none;
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+.nav {
+
+    grid-area: nav;
     background-color: #a278b8;
     font-size: large;
-    height: 62px;
-    align-items: center;
+    height: 60px;
+    padding: 19px;
 
 }
 
+nav ul {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+}
 
 .nav>ul>li>a {
     text-decoration: none;
@@ -25,37 +52,24 @@ justify-content: center;
 
 }
 
-.nav-search{
-    position: absolute;
-    right: 10px;
-    width: 200px;
-    height: 25px;
-    border-radius: 10px;
-    border: 0px;
-    outline: none;
-    
-}
+
 
 .link {
-    
- 
+
+
     padding-left: 45px;
     padding-right: 45px;
-  
+
 }
 
 .link:hover {
     border-radius: 15px;
     background: rgb(73, 34, 79);
     transition: background-color .5s;
-   
+
 }
 
-.listas {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
+
 
 .bodyIndex {
     background-color: rgb(189, 189, 189);
@@ -104,7 +118,7 @@ justify-content: center;
 
 
 .tarjeta {
-   
+
     border-radius: 50px;
     text-align: center;
     width: 350;
@@ -134,7 +148,7 @@ justify-content: center;
 
 .footer {
     background-color: #a278b8;
-    
+
 }
 
 .zapas {
@@ -142,7 +156,7 @@ justify-content: center;
     transition: 0.2s;
 }
 
-.zapas:hover{
+.zapas:hover {
     transform: scale(1.2);
 }
 
@@ -153,44 +167,46 @@ justify-content: center;
 /* Footer */
 
 
-.footer-derechos{
-height: 20px;
-width: 100%;
+footer {}
+
+.footer-derechos {
+    height: 20px;
+    width: 100%;
     border: solid 1px;
     bottom: 10px;
     background-color: white;
 }
 
-.footer-links{
+.footer-links {
     margin-left: 30px;
     padding: 20px;
 
 
 }
 
-.lista-hijos{
+.lista-hijos {
     list-style-type: none;
     padding: 2px;
 }
 
-.footer-parrafo{
+.footer-parrafo {
     text-align: center;
 }
 
-.JoinUs{
+.JoinUs {
     color: white;
     text-decoration: underline;
 }
 
 
-.iconos-div{
+.iconos-div {
     display: flex;
     justify-content: center;
-;
+    ;
 
 }
 
-.iconos{
+.iconos {
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -199,20 +215,32 @@ width: 100%;
 
 /* CONTACT */
 
-.bodyContact{
-background-color: #a278b8a9;
+
+
+.bodyContact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 200px auto 100px;
+    grid-template-areas: "nav nav nav nav"
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+    background-color: #a278b8a9;
 
 }
 
-
-
-.headerContact{
+.mainContact {
     display: flex;
     justify-content: center;
-  
+    grid: main;
 }
 
-.contactTitulo{
+.headerContact {
+    grid-area: header;
+
+}
+
+.contactTitulo {
     text-align: center;
     font-weight: bolder;
     font-size: 90px;
@@ -221,86 +249,105 @@ background-color: #a278b8a9;
     font-family: 'Quicksand', sans-serif;
 }
 
-.caja1{
+.caja1 {
     display: flex;
     justify-content: center;
+
 }
 
+footer {
 
-.btnForm{
+    grid-area: footer;
+}
+
+.btnForm {
     height: 100px;
-    background: rgb(63,94,251);
+    background: rgb(63, 94, 251);
     font-size: 20px;
     font-style: italic;
     border: none;
     color: white;
-    
+
 }
 
-.form label{
+.form label {
     display: flex;
     flex-direction: column;
-padding: 30px;
-margin: 10px;
+    padding: 30px;
+    margin: 10px;
 }
 
-.form{
-background-color: rgba(255, 255, 255, 0.107);
-border-radius: 5%;
-width: 850px;
-height: 700px;
-margin-bottom: 25px;
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 50px;
-grid-template-areas: "nombre apellido"
-                     "email    email"
-                     "mensaje mensaje"
-                     "enviar enviar";
+.form {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.107);
+    border-radius: 5%;
+    width: 850px;
+    height: 700px;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 50px;
+    grid-template-areas: "nombre apellido"
+        "email    email"
+        "mensaje mensaje"
+        "enviar enviar";
 }
 
 
-.form label:nth-child(1){
+.form label:nth-child(1) {
     grid-area: nombre;
 }
 
-.form label:nth-child(2){
+.form label:nth-child(2) {
     grid-area: apellido;
 }
 
-.form label:nth-child(3){
+.form label:nth-child(3) {
     grid-area: email;
 }
 
-.form label:nth-child(4){
+.form label:nth-child(4) {
     grid-area: mensaje;
-    
+
 }
 
-.controls{
+.controls {
     width: 100%;
     padding: 10px;
     background-color: transparent;
- border: none;
- border-bottom: rgb(63,94,251) 1px solid;
+    border: none;
+    border-bottom: rgb(63, 94, 251) 1px solid;
     margin-bottom: 15px;
 }
 
-@media (max-width:768px){
-    .form{
+@media (max-width:768px) {
+    .form {
         width: 500px;
         height: 700px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 800px;
-        grid-template-areas:  "nombre"
-                              "apellido"
-                              "email"
-                              "mensaje"
-                              "enviar";
+        grid-template-areas: "nombre"
+            "apellido"
+            "email"
+            "mensaje"
+            "enviar";
     }
-    .btnForm{
-      
+
+    .nav {
+        display: flex;
+        justify-content: start;
+        align-items: none;
+    }
+
+    .nav .fa-bars {
+        display: block;
+
+    }
+
+    .nav ul {
+        display: none;
     }
 }
 
@@ -308,136 +355,141 @@ grid-template-areas: "nombre apellido"
 
 /* AboutUs */
 
-.bodyAboutus{ 
+.bodyAboutus {
     background-color: #a278b8a9;
 
 
 }
 
-.encabezadoAboutus{
+.encabezadoAboutus {
     text-align: center;
     margin-top: 150px;
     font-size: 25px;
-    
-    
+
+
 }
-.principal1{
-  margin: 5px;
-  font-size: 90px;
-  color: white;
+
+.principal1 {
+    margin: 5px;
+    font-size: 90px;
+    color: white;
 }
-.principal2{
+
+.principal2 {
     margin: 5px;
     font-style: italic;
     color: white;
-  }
-
-.principal3{
-  margin-top: 30px;
-  width: 140px;
-  height: 50px;
-  border: solid  #9d2edaa9;
-  border-radius: 10px;
-  font-style: italic;
-  
 }
 
-.principal4{
+.principal3 {
+    margin-top: 30px;
+    width: 140px;
+    height: 50px;
+    border: solid #9d2edaa9;
+    border-radius: 10px;
+    font-style: italic;
+
+}
+
+.principal4 {
     margin-top: 15px;
     font-size: 60px;
     color: white;
-  letter-spacing: 5px;
-  color: #c3f4fe;
-  
+    letter-spacing: 5px;
+    color: #c3f4fe;
+
 }
 
-.tarjetaPadre{
-display: flex;
-justify-content: space-around;
-  margin-top: 25px;
+.tarjetaPadre {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
 }
 
-.bloquenegro{
+.bloquenegro {
     width: 325px;
 }
 
-.tarjetasHijo{
-   text-align: center;
-   border: solid;
-  
+.tarjetasHijo {
+    text-align: center;
+    border: solid;
+
 
 }
 
-.textosTarjetaA{
+.textosTarjetaA {
     margin: 10px;
     width: 300px;
 }
-.tituloTarjetaA{
+
+.tituloTarjetaA {
     margin: 15px;
     color: white;
     font-size: 35px
 }
 
-.iconos-divA{
+.iconos-divA {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    
-;
+
+    ;
 }
 
 /* About us FIN */
 
 /* APP */
 
-.bodyApp{
+.bodyApp {
     background-color: #a278b8a9;
 
 }
-.tituloApp{
+
+.tituloApp {
     text-align: center;
     margin-top: 50px;
     font-size: 50px;
     color: white;
     font-style: italic;
-    
+
 }
 
-.installbtn{
+.installbtn {
     width: 350px;
     height: 115px;
     font-size: 30px;
-   
+
     background-color: #a278b8;
     border: solid #000;
 }
-.parrafoInstall{
+
+.parrafoInstall {
     width: 350px;
     text-align: center;
     margin-top: 15px;
 }
 
-.botonyparrafo{
+.botonyparrafo {
     margin-left: 150px;
     margin-top: 200px;
-    
+
 }
 
-.mainApp{
+.mainApp {
     display: flex;
     justify-content: space-around;
     margin-bottom: 100px;
 }
 
-.videoapp{
+.videoapp {
     margin-top: 110px;
 }
 
-.bodyMerch{
+.bodyMerch {
     background-color: rgb(189, 189, 189);
 }
 
-.merchandising{
+.merchandising {
     text-align: center;
     font-size: 60px;
     color: white;
@@ -446,37 +498,36 @@ justify-content: space-around;
     text-decoration: overline;
 }
 
-.productosPadre{
+.productosPadre {
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
 }
 
-.bloqueMerch{
+.bloqueMerch {
     width: 250px
-  
 }
 
-.productosHijo{
- text-align: center;
- align-items: center;
- border: solid #a278b8;
- padding: 30px;
+.productosHijo {
+    text-align: center;
+    align-items: center;
+    border: solid #a278b8;
+    padding: 30px;
 }
 
-.textoMerch{
+.textoMerch {
     margin: 10px;
-  color: white;
-  width: 250px;
+    color: white;
+    width: 250px;
 }
 
-.textosMerch{
- font-size: 20px;
- width: 200px;
+.textosMerch {
+    font-size: 20px;
+    width: 200px;
 }
 
-.parrafoMerch{
+.parrafoMerch {
     width: 250px;
 }
