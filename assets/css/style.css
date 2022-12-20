@@ -10,7 +10,7 @@
 .bodyIndex {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto auto 200px;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: "nav nav nav nav"
                           "header header header header"
                          "main main main main"
@@ -33,7 +33,9 @@ nav{
 .nav {
 
     grid-area: nav;
-    background-color: #a278b8;
+    background: linear-gradient(90deg, rgba(162,120,184,1) 0%, rgba(149,0,255,1) 100%);
+
+    
     font-size: large;
     height: 60px;
     padding: 19px;
@@ -76,8 +78,8 @@ nav ul {
 }
 
 .encabezado {
-    background-image: url(../img/foto.jpg);
-    background-attachment: fixed;
+background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000x2000/landscape-1474387477-hbz-cara-puma-index2.jpg?resize=1200:*);  
+  background-attachment: fixed;
     width: 100%;
     height: 600px;
     background-size: cover;
@@ -97,16 +99,16 @@ nav ul {
 
 
 .trending {
-    color: white;
+    color: #000;
     font-size: 50px;
     text-align: center;
     letter-spacing: 15px;
-    font-style: italic;
     margin: 25px;
    
 }
 
 .btn {
+    width: 200px;
     padding: 10px 30px;
     background-color: #a278b8;
     border: none;
@@ -114,6 +116,7 @@ nav ul {
     border-radius: 5px;
     font-weight: bold;
     margin: 10px;
+    font-size: 15px;
 }
 
 
@@ -168,48 +171,81 @@ nav ul {
 
 /* Footer */
 
-
-.footer-derechos {
-    height: 20px;
+.formfooter{
+    margin-left: 100px;
+}
+.news{margin-left: 100px;}
+.footer{
+    margin-top: 150px;
     width: 100%;
-    border: solid 1px;
-    bottom: 10px;
-    background-color: white;
-}
-
-.footer-links {
-    margin-left: 30px;
-    padding: 20px;
-
-
-}
-
-.lista-hijos {
-    list-style-type: none;
-    padding: 2px;
-}
-
-.footer-parrafo {
-    text-align: center;
-}
-
-.JoinUs {
-    color: white;
-    text-decoration: underline;
-}
-
-
-.iconos-div {
+    padding: 100px 15%;
+    background-color: #333;
+    color: #efefef;
     display: flex;
     justify-content: center;
-    ;
 
 }
 
-.iconos {
-    margin-left: 5px;
-    margin-right: 5px;
+.footer div{
+    text-align: center;
 }
+.col-2{
+    flex-grow: 2;
+}
+
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.formfooter input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+
+}
+.formfooter button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.formfooter button:hover{
+    background-color: white;
+    color: #000;
+    transition: 0.3s;
+
+}
+
+.social-icons{
+    margin-top: 30px;
+
+}
+
+.social-icons i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+
+
 
 /* FooterFin */
 
@@ -220,7 +256,7 @@ nav ul {
 .bodyContact {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 200px auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: "nav    nav    nav     nav"
                          "header header header header"
                           " main   main   main   main"
@@ -239,9 +275,18 @@ nav ul {
     grid-area: header;
 
 }
-
-.contactTitulo {
+.spanus{
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    font-size: 90px;
+    color: #333;
+}
+.contactTitulo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
     font-weight: bolder;
     font-size: 90px;
     color: white;
@@ -252,7 +297,7 @@ nav ul {
 .caja1 {
     display: flex;
     justify-content: center;
-margin-left: 650px;
+margin-left: 630px;
 }
 
 footer {
@@ -267,6 +312,7 @@ footer {
     font-style: italic;
     border: none;
     color: white;
+    cursor: pointer;
 
 }
 
@@ -276,7 +322,15 @@ footer {
     padding: 30px;
     margin: 10px;
 }
+.form label input:focus {
+    outline-style: none;
 
+}
+
+.form label textarea:focus {
+    outline-style: none;
+
+}
 .form {
     display: flex;
     justify-content: center;
@@ -378,17 +432,26 @@ footer {
 .principal2 {
     margin: 5px;
     font-style: italic;
-    color: white;
+    color: #333;
 }
 
 .principal3 {
-    margin-top: 30px;
-    width: 140px;
-    height: 50px;
-    border: solid #9d2edaa9;
-    border-radius: 10px;
-    font-style: italic;
+    margin-top: 15px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 250px;
+    transition: 0.3s;
 
+}
+
+.principal3:hover{
+    background: #fff;
+    color: #000;
 }
 
 .principal4 {
@@ -396,7 +459,6 @@ footer {
     font-size: 60px;
     color: white;
     letter-spacing: 5px;
-    color: #c3f4fe;
 
 }
 
@@ -495,7 +557,8 @@ footer {
     color: white;
     font-style: italic;
     margin-top: 50px;
-    text-decoration: overline;
+    text-decoration: overline rgb(63, 94, 251);
+    
 }
 
 .productosPadre {
