@@ -15,7 +15,6 @@
                           "header header header header"
                          "main main main main"
                         "footer footer footer footer";
-    ;
 }
 
 .main{
@@ -30,7 +29,8 @@ nav{
 }
 
 .bodyIndex {
-    background-color: #fff;
+    background: 
+    #fff;
 }
 
 .encabezado {
@@ -62,13 +62,13 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
    
 }
 
-.btn {
+.btnHome {
     width: 200px;
     padding: 10px 30px;
     background-color: #a278b8;
     border: none;
     color: white;
-    border-radius: 5px;
+    border-radius: 50px;
     font-weight: bold;
     margin: 10px;
     font-size: 15px;
@@ -79,7 +79,6 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
 
 .tarjeta {
 
-    border-radius: 50px;
     text-align: center;
     width: 350;
     gap: 15px;
@@ -112,7 +111,6 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
 }
 
 .zapas {
-    border-radius: 50px;
     transition: 0.2s;
 }
 
@@ -126,81 +124,68 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
 
 /* Footer */
 
-.formfooter{
-    margin-left: 100px;
-}
-.news{margin-left: 100px;}
-.footerpie{
-    margin-top: 150px;
+.pie-pagina{
     width: 100%;
-    padding: 100px 15%;
-    background-color: #333;
+    background-color: #a278b8;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 150px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
     color: #efefef;
-    display: flex;
-    justify-content: center;
-
-}
-
-.footerpie div{
-    text-align: center;
-}
-.columna2{
-    flex-grow: 2;
-}
-
-.footerpie div h3{
-    font-weight: 300;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-}
-.columna1 a{
-    display: block;
-    text-decoration: none;
-    color: white;
     margin-bottom: 10px;
 }
-
-.formfooter input{
-    width: 400px;
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
     height: 45px;
-    border-radius: 4px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    outline: none;
-    border: none;
-
-}
-.formfooter button{
-    background: transparent;
-    border: 2px solid #fff;
+    line-height: 45px;
     color: #fff;
-    border-radius: 30px;
-    padding: 10px 30px;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #000;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
     font-size: 15px;
-    cursor: pointer;
 }
-
-.formfooter button:hover{
-    background-color: white;
-    color: #000;
-    transition: 0.3s;
-
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
 }
-
-.social-icons{
-    margin-top: 30px;
-
-}
-
-.social-icons i{
-    font-size: 22px;
-    margin: 10px;
-    cursor: pointer;
-    
-}
-
-
 
 /* FooterFin */
 
@@ -211,7 +196,7 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
 .bodyContact {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto 850px auto;
     grid-template-areas: "nav    nav    nav     nav"
                          "header header header header"
                           " main   main   main   main"
@@ -262,13 +247,34 @@ footer {
 
 .btnForm {
     height: 100px;
-    background: rgb(63, 94, 251);
+    background: linear-gradient(102deg, #4551b5 40%, #543fd7 60%);
     font-size: 20px;
     font-style: italic;
     border: none;
     color: white;
     cursor: pointer;
+display: inline-block;
+border-radius: .25rem;
+min-width: 200px;
+text-decoration: none;
+box-shadow: 0 0 0 0 rgba(0,, 0, 0, 5);
+animation: pulse 1.5s infinite;
+}
 
+@keyframes pulse{
+    0% {
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, .1);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
+    }
+    100% {
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
+    }
+    
 }
 
 .form label {
@@ -292,7 +298,7 @@ footer {
     background-color: rgba(255, 255, 255, 0.107);
     border-radius: 5%;
     width: 850px;
-    height: 700px;
+    height: 800px;
     margin-bottom: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -477,46 +483,3 @@ footer {
     background-color: rgb(189, 189, 189);
 }
 
-.merchandising {
-    text-align: center;
-    font-size: 60px;
-    color: white;
-    font-style: italic;
-    margin-top: 50px;
-    text-decoration: overline rgb(63, 94, 251);
-    
-}
-
-.productosPadre {
-    margin-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-
-.bloqueMerch {
-    width: 250px
-}
-
-.productosHijo {
-    text-align: center;
-    align-items: center;
-    border: solid #a278b8;
-    padding: 30px;
-}
-
-.textoMerch {
-    margin: 10px;
-    color: white;
-    width: 250px;
-}
-
-.textosMerch {
-    font-size: 20px;
-    width: 200px;
-}
-
-.parrafoMerch {
-    width: 250px;
-}
