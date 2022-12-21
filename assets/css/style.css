@@ -243,11 +243,6 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
     font-family: 'Quicksand', sans-serif;
 }
 
-.caja1 {
-    display: flex;
-    justify-content: center;
-margin-left: 630px;
-}
 
 footer {
 
@@ -304,8 +299,7 @@ animation: pulse 1.5s infinite;
 }
 .form {
     color: #fff;
-    display: flex;
-    justify-content: center;
+
     background-color: rgba(255, 255, 255, 0.107);
     border-radius: 5%;
     width: 850px;
