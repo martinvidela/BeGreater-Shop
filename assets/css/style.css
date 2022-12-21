@@ -30,7 +30,7 @@ nav{
 
 .bodyIndex {
     background: 
-    #fff;
+    #0a141d;
 }
 
 .encabezado {
@@ -54,7 +54,7 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
 
 
 .trending {
-    color: #000;
+    color: white;
     font-size: 50px;
     text-align: center;
     letter-spacing: 15px;
@@ -65,16 +65,21 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
 .btnHome {
     width: 200px;
     padding: 10px 30px;
-    background-color: #a278b8;
+    background-color: white;
     border: none;
-    color: white;
+    color: black;
     border-radius: 50px;
     font-weight: bold;
     margin: 10px;
     font-size: 15px;
+    transition: 0.3s;
 }
 
-
+.btnHome:hover{
+    background-color: transparent;
+    color: #4551b5;
+    border: solid 1px;
+}
 
 
 .tarjeta {
@@ -92,12 +97,14 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
     justify-content: space-around;
     margin: 25px;
 
+
 }
 
 
 
 .textos {
     width: 510px;
+    color: white;
 
 }
 
@@ -106,12 +113,14 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
 }
 
 .footerpie {
-    background-color: #a278b8;
+    background-color: #4551b5;
 
 }
 
 .zapas {
     transition: 0.2s;
+    width: 450px;
+    
 }
 
 .zapas:hover {
@@ -126,7 +135,7 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
 
 .pie-pagina{
     width: 100%;
-    background-color: #a278b8;
+    background-color: #4551b5;
 }
 .pie-pagina .grupo-1{
     width: 100%;
@@ -170,7 +179,7 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
     color: aqua;
 }
 .pie-pagina .grupo-2{
-    background-color: #000;
+    background-color: #0a141d;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
@@ -201,7 +210,7 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
                          "header header header header"
                           " main   main   main   main"
                           "footer footer footer footer";
-    background-color: #a278b8a9;
+    background-color: #0a141d;
 
 }
 
@@ -246,6 +255,7 @@ footer {
 }
 
 .btnForm {
+    margin-top: 15px;
     height: 100px;
     background: linear-gradient(102deg, #4551b5 40%, #543fd7 60%);
     font-size: 20px;
@@ -268,7 +278,7 @@ animation: pulse 1.5s infinite;
     }
     70% {
         transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
+        box-shadow: 0 0 0 25px rgba(256, 256, 256, 0);
     }
     100% {
         transform: scale(.99);
@@ -293,12 +303,13 @@ animation: pulse 1.5s infinite;
 
 }
 .form {
+    color: #fff;
     display: flex;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.107);
     border-radius: 5%;
     width: 850px;
-    height: 800px;
+    height: 820px;
     margin-bottom: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -342,7 +353,7 @@ animation: pulse 1.5s infinite;
 /* AboutUs */
 
 .bodyAboutus {
-    background-color: #a278b8a9;
+    background-color: #0a141d;
 
 
 }
@@ -364,7 +375,7 @@ animation: pulse 1.5s infinite;
 .principal2 {
     margin: 5px;
     font-style: italic;
-    color: #333;
+    color: #9b1222;
 }
 
 .principal3 {
@@ -435,7 +446,7 @@ animation: pulse 1.5s infinite;
 /* APP */
 
 .bodyApp {
-    background-color: #a278b8a9;
+    background-color: #0a141d;
 
 }
 
@@ -447,20 +458,30 @@ animation: pulse 1.5s infinite;
     font-style: italic;
 
 }
+.AppUs{
+    color: #b70e21;
+}
 
 .installbtn {
     width: 350px;
     height: 115px;
     font-size: 30px;
+border-radius: 15px;
+color: white;
 
-    background-color: #a278b8;
+background: linear-gradient(90deg, rgba(175,175,175,1) 0%, rgba(140,140,140,1) 100%);
+
     border: solid #000;
+animation: pulse 1.5s infinite;
+
 }
 
 .parrafoInstall {
+    color: white;
     width: 350px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
+
 }
 
 .botonyparrafo {
@@ -480,6 +501,6 @@ animation: pulse 1.5s infinite;
 }
 
 .bodyMerch {
-    background-color: rgb(189, 189, 189);
+    background-color: #0a141d;
 }
 
