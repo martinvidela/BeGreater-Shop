@@ -214,11 +214,17 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
 
 }
 
+.caja{
+    padding:  50px 50px 50px 50px;
+ 
+}
+
 .mainContact {
     display: flex;
     justify-content: center;
     grid: main;
 }
+
 
 .headerContact {
     grid-area: header;
@@ -440,9 +446,21 @@ animation: pulse 1.5s infinite;
 /* APP */
 
 .bodyApp {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "nav nav nav nav"
+                          "header header header header"
+                         "main main main main"
+                        "footer footer footer footer";
     background-color: #0a141d;
 
 }
+
+main{
+    grid-area: main
+}
+
 
 .tituloApp {
     text-align: center;
