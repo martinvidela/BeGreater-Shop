@@ -5,37 +5,39 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* NAV E INDEX */
+/**************************** NAV E INDEX ****************************/
 
 .bodyIndex {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto 285px;
     grid-template-areas: "nav nav nav nav"
-                          "header header header header"
-                         "main main main main"
-                        "footer footer footer footer";
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
 }
 
-.main{
+main {
     grid-area: main;
 
 }
-header{
+
+header {
     grid-area: header;
 }
-nav{
+
+nav {
     grid-area: nav;
 }
 
 .bodyIndex {
-    background: 
-    #0a141d;
+    background:
+        #0a141d;
 }
 
 .encabezado {
-background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000x2000/landscape-1474387477-hbz-cara-puma-index2.jpg?resize=1200:*);  
-  background-attachment: fixed;
+    background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000x2000/landscape-1474387477-hbz-cara-puma-index2.jpg?resize=1200:*);
+    background-attachment: fixed;
     width: 100%;
     height: 600px;
     background-size: cover;
@@ -45,21 +47,13 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
 
 }
 
-.encabezado2 h1 {
-    color: white;
-    font-size: 50px;
-   
-}
-
-
-
-.trending {
+.sneakers {
     color: white;
     font-size: 50px;
     text-align: center;
     letter-spacing: 15px;
     margin: 25px;
-   
+
 }
 
 .btnHome {
@@ -75,10 +69,9 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
     transition: 0.3s;
 }
 
-.btnHome:hover{
+.btnHome:hover {
     background-color: transparent;
     color: #4551b5;
-    border: solid 1px;
 }
 
 
@@ -100,8 +93,6 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
 
 }
 
-
-
 .textos {
     width: 510px;
     color: white;
@@ -112,15 +103,11 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
     margin: 10px;
 }
 
-.footerpie {
-    background-color: #4551b5;
-
-}
 
 .zapas {
     transition: 0.2s;
     width: 450px;
-    
+
 }
 
 .zapas:hover {
@@ -129,41 +116,56 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
 
 
 
-/* FIN NAV E INDEX */
+/**************************** FIN NAV E INDEX ****************************/
 
-/* Footer */
 
-.pie-pagina{
+/***************************** MERCH ****************************/
+.bodyMerch {
+    background-color: #0a141d;
+}
+/***************************** MERCH FIN ****************************/
+
+
+
+/*************************** Footer ***************************/
+
+.pie-pagina {
     width: 100%;
     background-color: #4551b5;
 }
-.pie-pagina .grupo-1{
+
+.pie-pagina .grupo-1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap:50px;
+    grid-gap: 50px;
     padding: 45px 0px;
 }
-.pie-pagina .grupo-1 .box figure{
+
+.pie-pagina .grupo-1 .box figure {
     width: 100%;
     height: 100%;
     align-items: center;
 }
-.pie-pagina .grupo-1 .box figure img{
+
+.pie-pagina .grupo-1 .box figure img {
     width: 150px;
 }
-.pie-pagina .grupo-1 .box h2{
+
+.pie-pagina .grupo-1 .box h2 {
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;
 }
-.pie-pagina .grupo-1 .box p{
+
+.pie-pagina .grupo-1 .box p {
     color: #efefef;
     margin-bottom: 10px;
 }
-.pie-pagina .grupo-1 .red-social a{
+
+.pie-pagina .grupo-1 .red-social a {
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -175,84 +177,70 @@ background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000
     text-align: center;
     transition: all 300ms ease;
 }
-.pie-pagina .grupo-1 .red-social a:hover{
+
+.pie-pagina .grupo-1 .red-social a:hover {
     color: aqua;
 }
-.pie-pagina .grupo-2{
+
+.pie-pagina .grupo-2 {
     background-color: #0a141d;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
 }
-.pie-pagina .grupo-2 small{
+
+.pie-pagina .grupo-2 small {
     font-size: 15px;
 }
-@media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
+        grid-gap: 30px;
         padding: 35px 0px;
+    }
+
+    .pie-pagina .grupo-1 .box h2 {
+
+        font-size: 20px;
+    }
+
+    .pie-pagina .grupo-1 .box p {
+        font-size: 15px;
     }
 }
 
-/* FooterFin */
+/**************************** FooterFin ****************************/
 
-/* CONTACT */
+/**************************** CONTACT ****************************/
 
+.caja {
+    padding: 50px;
 
-
-.bodyContact {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto 850px auto;
-    grid-template-areas: "nav    nav    nav     nav"
-                         "header header header header"
-                          " main   main   main   main"
-                          "footer footer footer footer";
-    background-color: #0a141d;
-
-}
-
-.caja{
-    padding:  50px 50px 50px 50px;
- 
 }
 
 .mainContact {
     display: flex;
     justify-content: center;
-    grid: main;
 }
 
 
-.headerContact {
-    grid-area: header;
-
-}
-.spanus{
+.spanus {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-weight: bolder;
     font-size: 90px;
     color: #333;
 }
+
 .contactTitulo {
-    display: flex;
-    justify-content: center;
     text-align: center;
-    
     font-weight: bolder;
     font-size: 90px;
     color: white;
     margin: 15px;
     font-family: 'Quicksand', sans-serif;
-}
-
-
-footer {
-
-    grid-area: footer;
 }
 
 .btnForm {
@@ -264,28 +252,30 @@ footer {
     border: none;
     color: white;
     cursor: pointer;
-display: inline-block;
-border-radius: .25rem;
-min-width: 200px;
-text-decoration: none;
-box-shadow: 0 0 0 0 rgba(0, 0, 0, 5);
-animation: pulse 1.5s infinite;
+    display: inline-block;
+    border-radius: .25rem;
+    min-width: 200px;
+    text-decoration: none;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 5);
+    animation: pulse 1.5s infinite;
 }
 
-@keyframes pulse{
+@keyframes pulse {
     0% {
         transform: scale(.99);
         box-shadow: 0 0 0 0 rgba(256, 256, 256, .1);
     }
+
     70% {
         transform: scale(1);
         box-shadow: 0 0 0 25px rgba(256, 256, 256, 0);
     }
+
     100% {
         transform: scale(.99);
         box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
     }
-    
+
 }
 
 .form label {
@@ -294,6 +284,7 @@ animation: pulse 1.5s infinite;
     padding: 30px;
     margin: 10px;
 }
+
 .form label input:focus {
     outline-style: none;
 
@@ -303,9 +294,9 @@ animation: pulse 1.5s infinite;
     outline-style: none;
 
 }
+
 .form {
     color: #fff;
-
     background-color: rgba(255, 255, 255, 0.107);
     border-radius: 5%;
     width: 850px;
@@ -345,12 +336,13 @@ animation: pulse 1.5s infinite;
     border: none;
     border-bottom: rgb(63, 94, 251) 1px solid;
     margin-bottom: 15px;
+    color: rgb(186, 186, 186);
 }
 
 
-/* CONTACT */
+/***************************** CONTACT *****************************/
 
-/* AboutUs */
+/***************************** AboutUs *****************************/
 
 .bodyAboutus {
     background-color: #0a141d;
@@ -392,7 +384,7 @@ animation: pulse 1.5s infinite;
 
 }
 
-.principal3:hover{
+.principal3:hover {
     background: #fff;
     color: #000;
 }
@@ -411,9 +403,6 @@ animation: pulse 1.5s infinite;
     margin-top: 25px;
 }
 
-.bloquenegro {
-    width: 325px;
-}
 
 .tarjetasHijo {
     text-align: center;
@@ -437,27 +426,29 @@ animation: pulse 1.5s infinite;
     display: flex;
     justify-content: center;
     margin-top: 50px;
-
-    ;
 }
 
-/* About us FIN */
+/***************************** About us FIN *****************************/
 
-/* APP */
+/***************************** APP *****************************/
 
 .bodyApp {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "nav nav nav nav"
-                          "header header header header"
-                         "main main main main"
-                        "footer footer footer footer";
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
     background-color: #0a141d;
 
 }
 
-main{
+footer{
+    grid-area: footer;
+}
+
+main {
     grid-area: main
 }
 
@@ -470,7 +461,8 @@ main{
     font-style: italic;
 
 }
-.AppUs{
+
+.AppUs {
     color: #b70e21;
 }
 
@@ -478,13 +470,11 @@ main{
     width: 350px;
     height: 115px;
     font-size: 30px;
-border-radius: 15px;
-color: white;
-
-background: linear-gradient(90deg, rgba(175,175,175,1) 0%, rgba(140,140,140,1) 100%);
-
+    border-radius: 15px;
+    color: white;
+    background: linear-gradient(90deg, rgba(175, 175, 175, 1) 0%, rgba(140, 140, 140, 1) 100%);
     border: solid #000;
-animation: pulse 1.5s infinite;
+    animation: pulse 1.5s infinite;
 
 }
 
@@ -510,9 +500,5 @@ animation: pulse 1.5s infinite;
 
 .videoapp {
     margin-top: 110px;
-}
-
-.bodyMerch {
-    background-color: #0a141d;
 }
 
