@@ -10,7 +10,7 @@
 .bodyIndex {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto auto 285px;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: "nav nav nav nav"
         "header header header header"
         "main main main main"
