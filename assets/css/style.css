@@ -71,7 +71,7 @@
   }
 }
 /*************************** Footer FIN ***************************/
-/**************************** BODY INDEX ****************************/
+/**************************** INDEX  ****************************/
 .bodyIndex {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -126,7 +126,6 @@ nav {
   font-size: 15px;
   transition: 0.3s;
 }
-
 .btnHome:hover {
   background-color: transparent;
   color: #4551b5;
@@ -159,14 +158,17 @@ nav {
   transition: 0.2s;
   width: 450px;
 }
-
 .zapas:hover {
   transform: scale(1.2);
 }
 
-/**************************** BODY INDEX FIN ****************************/
+/**************************** INDEX FIN ****************************/
+/***************************** MERCH ****************************/
+.bodyMerch {
+  background-color: #0a141d;
+}
 
-/**************************** FooterFin ****************************/
+/***************************** MERCH FIN ****************************/
 /**************************** CONTACT ****************************/
 .caja {
   padding: 50px;
@@ -209,7 +211,7 @@ nav {
   text-decoration: none;
   box-shadow: 0 0 0 0 rgb(0, 0, 0);
   -webkit-animation: pulse 1.5s infinite;
-          animation: pulse 1.5s infinite;
+  animation: pulse 1.5s infinite;
 }
 
 @-webkit-keyframes pulse {
@@ -226,7 +228,6 @@ nav {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
-
 @keyframes pulse {
   0% {
     transform: scale(0.99);
@@ -241,21 +242,6 @@ nav {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
-.form label {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  margin: 10px;
-}
-
-.form label input:focus {
-  outline-style: none;
-}
-
-.form label textarea:focus {
-  outline-style: none;
-}
-
 .form {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.107);
@@ -267,6 +253,18 @@ nav {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 50px;
   grid-template-areas: "nombre apellido" "email    email" "mensaje mensaje" "enviar enviar";
+}
+.form label {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 10px;
+}
+.form label:focus {
+  outline-style: none;
+}
+.form label textarea:focus {
+  outline-style: none;
 }
 
 .form label:nth-child(1) {
@@ -331,7 +329,6 @@ nav {
   width: 250px;
   transition: 0.3s;
 }
-
 .principal3:hover {
   background: #fff;
   color: #000;
@@ -434,4 +431,6 @@ main {
 
 .videoapp {
   margin-top: 110px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/***************************** APP FIN *****************************//*# sourceMappingURL=style.css.map */

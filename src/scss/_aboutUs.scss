@@ -1,0 +1,79 @@
+/***************************** AboutUs *****************************/
+.bodyAboutus {
+    background-color: #0a141d;
+}
+
+.encabezadoAboutus {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 25px;
+}
+
+.principal1 {
+    margin: 5px;
+    font-size: 90px;
+    color: white;
+}
+
+.principal2 {
+    margin: 5px;
+    font-style: italic;
+    color: #9b1222;
+}
+
+.principal3 {
+    margin-top: 15px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 250px;
+    transition: 0.3s;
+
+    &:hover {
+        background: #fff;
+        color: #000;
+    }
+}
+
+
+
+.principal4 {
+    margin-top: 15px;
+    font-size: 60px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.tarjetaPadre {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.tarjetasHijo {
+    text-align: center;
+    border: solid;
+}
+
+.textosTarjetaA {
+    margin: 10px;
+    width: 300px;
+}
+
+.tituloTarjetaA {
+    margin: 15px;
+    color: white;
+    font-size: 35px;
+}
+
+.iconos-divA {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/***************************** About us FIN *****************************/
