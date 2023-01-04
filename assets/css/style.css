@@ -5,7 +5,73 @@
   font-family: "Roboto", sans-serif;
 }
 
-/**************************** NAV E INDEX ****************************/
+/*************************** Footer ***************************/
+.pie-pagina {
+  width: 100%;
+  background-color: #4551b5;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 150px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: #0a141d;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+/*************************** Footer FIN ***************************/
+/**************************** BODY INDEX ****************************/
 .bodyIndex {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -80,10 +146,6 @@ nav {
   margin: 25px;
 }
 
-.tarjetas .textos p{
-  font-size: 16px;
-}
-
 .textos {
   width: 510px;
   color: white;
@@ -102,154 +164,8 @@ nav {
   transform: scale(1.2);
 }
 
-.hamburguesa{
-  width: 40px;
-  position: absolute;
-  top: 0.5rem;
-  right: 1.5rem;
-  cursor: pointer;
-  filter: invert(1);
-  z-index: 1;
-}
-.hamburguesa img{
-  max-width: 100%;
-}
+/**************************** BODY INDEX FIN ****************************/
 
-@media screen and (min-width:768px) {
-
-  .hamburguesa{
-display: none;
-  }
-}
-.topnav{
-list-style: none;
-margin-top: 0;
-margin-bottom: 0;
-padding-left: 0;
-display: flex;
-flex-direction: column;
-align-items: center;
-background-color: #4551b5;
-transition: transform 0.3s;
-transform: translateY(-100%);
-}
-.hamburguesa_check{
-  display: none;
-}
-
-.hamburguesa_check:checked + .topnav{
-  transform: translateY(0);
-}
-
-@media screen and (min-width:768px) {
-  .topnav{ 
-    flex-direction: row;
-    transform: translateY(0);
-  }
-
-}
-
-.topnavhijos{
-color: white;
-text-decoration: none;
-text-transform: uppercase;
-padding: 1em;
-}
-
-.navegador .topnav a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  display: flex;
-  
-}
-/**************************** FIN NAV E INDEX ****************************/
-/***************************** MERCH ****************************/
-.bodyMerch {
-  background-color: #0a141d;
-}
-
-/***************************** MERCH FIN ****************************/
-/*************************** Footer ***************************/
-.pie-pagina {
-  width: 100%;
-  background-color: #4551b5;
-}
-
-.pie-pagina .grupo-1 {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  padding: 45px 0px;
-}
-
-.pie-pagina .grupo-1 .box figure {
-  width: 100%;
-  height: 100%;
-  align-items: center;
-}
-
-.pie-pagina .grupo-1 .box figure img {
-  width: 150px;
-}
-
-.pie-pagina .grupo-1 .box h2 {
-  color: #fff;
-  margin-bottom: 25px;
-  font-size: 25px;
-}
-
-.pie-pagina .grupo-1 .box p {
-  color: #efefef;
-  margin-bottom: 10px;
-  font-size: 17px;
-}
-
-.pie-pagina .grupo-1 .red-social a {
-  display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color: #fff;
-  margin-right: 10px;
-  background-color: #0d2033;
-  text-align: center;
-  transition: all 300ms ease;
-}
-
-.pie-pagina .grupo-1 .red-social a:hover {
-  color: aqua;
-}
-
-.pie-pagina .grupo-2 {
-  background-color: #0a141d;
-  padding: 15px 10px;
-  text-align: center;
-  color: #fff;
-}
-
-.pie-pagina .grupo-2 small {
-  font-size: 15px;
-}
-
-@media screen and (max-width: 800px) {
-  .pie-pagina .grupo-1 {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
-  }
-  .pie-pagina .grupo-1 .box h2 {
-    font-size: 20px;
-  }
-  .pie-pagina .grupo-1 .box p {
-    font-size: 15px;
-  }
-}
 /**************************** FooterFin ****************************/
 /**************************** CONTACT ****************************/
 .caja {
@@ -519,5 +435,3 @@ main {
 .videoapp {
   margin-top: 110px;
 }/*# sourceMappingURL=style.css.map */
-
-
