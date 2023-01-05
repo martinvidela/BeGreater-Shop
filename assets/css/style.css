@@ -92,18 +92,12 @@ nav {
 }
 
 .bodyIndex {
-  background: #0a141d;
+  background-color: #0a141d;
 }
 
-.encabezado {
-  background-image: url(https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/38/4000x2000/landscape-1474387477-hbz-cara-puma-index2.jpg?resize=1200:*);
-  background-attachment: fixed;
-  width: 100%;
-  height: 600px;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.separacion {
+  background-color: #0a141d;
+  height: 15px;
 }
 
 .sneakers {
@@ -160,6 +154,10 @@ nav {
 }
 .zapas:hover {
   transform: scale(1.2);
+}
+
+.slide img {
+  height: 65vh;
 }
 
 /**************************** INDEX FIN ****************************/
