@@ -73,25 +73,6 @@
 /*************************** Footer FIN ***************************/
 /**************************** INDEX  ****************************/
 .bodyIndex {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "nav nav nav nav" "header header header header" "main main main main" "footer footer footer footer";
-}
-
-main {
-  grid-area: main;
-}
-
-header {
-  grid-area: header;
-}
-
-nav {
-  grid-area: nav;
-}
-
-.bodyIndex {
   background-color: #0a141d;
 }
 
@@ -148,11 +129,11 @@ nav {
   margin: 10px;
 }
 
-.zapas {
+#tarjetasindex {
   transition: 0.2s;
   width: 450px;
 }
-.zapas:hover {
+#tarjetasindex:hover {
   transform: scale(1.2);
 }
 
@@ -335,50 +316,10 @@ nav {
   letter-spacing: 5px;
 }
 
-.tarjetaPadre {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 25px;
-}
-
-.tarjetasHijo {
-  text-align: center;
-  border: solid;
-}
-
-.textosTarjetaA {
-  margin: 10px;
-  width: 300px;
-}
-
-.tituloTarjetaA {
-  margin: 15px;
-  color: white;
-  font-size: 35px;
-}
-
-.iconos-divA {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
 /***************************** About us FIN *****************************/
 /***************************** APP *****************************/
 .bodyApp {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "nav nav nav nav" "header header header header" "main main main main" "footer footer footer footer";
   background-color: #0a141d;
-}
-
-footer {
-  grid-area: footer;
-}
-
-main {
-  grid-area: main;
 }
 
 .tituloApp {

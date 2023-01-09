@@ -1,27 +1,11 @@
 
 /***************************** APP *****************************/
 
-.bodyApp {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "nav nav nav nav"
-        "header header header header"
-        "main main main main"
-        "footer footer footer footer";
-    background-color: #0a141d;
 
+
+.bodyApp{
+    background-color: $paletabackground;
 }
-
-footer{
-    grid-area: footer;
-}
-
-main {
-    grid-area: main
-}
-
-
 .tituloApp {
     text-align: center;
     margin-top: 50px;

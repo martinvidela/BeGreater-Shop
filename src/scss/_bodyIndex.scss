@@ -1,25 +1,7 @@
 /**************************** INDEX  ****************************/
 
 
-.bodyIndex {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "nav nav nav nav" "header header header header" "main main main main" "footer footer footer footer";
-  }
-  
-  main {
-    grid-area: main;
-  }
-  
-  header {
-    grid-area: header;
-  }
-  
-  nav {
-    grid-area: nav;
-  }
-  
+
   .bodyIndex {
     background-color: $paletabackground;
   }
@@ -27,6 +9,7 @@
 .separacion{
   background-color: $paletabackground;
   height: 15px;
+
 }
 
 
@@ -80,7 +63,7 @@
     margin: 10px;
   }
   
-  .zapas {
+  #tarjetasindex {
     transition: 0.2s;
     width: 450px;
     &:hover{
