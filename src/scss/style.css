@@ -1,0 +1,371 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/*************************** Footer ***************************/
+.pie-pagina {
+  width: 100%;
+  background-color: #4551b5;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 150px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: #0a141d;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+/*************************** Footer FIN ***************************/
+/**************************** INDEX  ****************************/
+.bodyIndex {
+  background-color: #0a141d;
+}
+
+.separacion {
+  background-color: #0a141d;
+  height: 15px;
+}
+
+.sneakers {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 15px;
+  margin: 25px;
+}
+
+.btnHome {
+  width: 200px;
+  padding: 10px 30px;
+  background-color: white;
+  border: none;
+  color: black;
+  border-radius: 50px;
+  font-weight: bold;
+  margin: 10px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.btnHome:hover {
+  background-color: transparent;
+  color: #4551b5;
+}
+
+.tarjeta {
+  text-align: center;
+  width: 350;
+  gap: 15px;
+  margin: 15px;
+  padding: 20px;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px;
+}
+
+.textos {
+  width: 510px;
+  color: white;
+}
+
+.titulotarjeta {
+  margin: 10px;
+}
+
+#tarjetasindex {
+  transition: 0.2s;
+  width: 450px;
+}
+#tarjetasindex:hover {
+  transform: scale(1.2);
+}
+
+/**************************** INDEX FIN ****************************/
+/***************************** MERCH ****************************/
+.bodyMerch {
+  background-color: #0a141d;
+}
+
+/***************************** MERCH FIN ****************************/
+/**************************** CONTACT ****************************/
+.caja {
+  padding: 50px;
+}
+
+.mainContact {
+  display: flex;
+  justify-content: center;
+}
+
+.spanus {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  font-size: 90px;
+  color: #333;
+}
+
+.contactTitulo {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 90px;
+  color: white;
+  margin: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.btnForm {
+  margin-top: 15px;
+  height: 100px;
+  background: linear-gradient(102deg, #4551b5 40%, #543fd7 60%);
+  font-size: 20px;
+  font-style: italic;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 0.25rem;
+  min-width: 200px;
+  text-decoration: none;
+  box-shadow: 0 0 0 0 rgb(0, 0, 0);
+  -webkit-animation: pulse 1.5s infinite;
+  animation: pulse 1.5s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(0.99);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 25px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(0.99);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.99);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 25px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(0.99);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+.form {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.107);
+  border-radius: 5%;
+  width: 850px;
+  height: 820px;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 50px;
+  grid-template-areas: "nombre apellido" "email    email" "mensaje mensaje" "enviar enviar";
+}
+.form label {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 10px;
+}
+.form label:focus {
+  outline-style: none;
+}
+.form label textarea:focus {
+  outline-style: none;
+}
+
+.form label:nth-child(1) {
+  grid-area: nombre;
+}
+
+.form label:nth-child(2) {
+  grid-area: apellido;
+}
+
+.form label:nth-child(3) {
+  grid-area: email;
+}
+
+.form label:nth-child(4) {
+  grid-area: mensaje;
+}
+
+.controls {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: rgb(63, 94, 251) 1px solid;
+  margin-bottom: 15px;
+  color: rgb(186, 186, 186);
+}
+
+/***************************** CONTACT *****************************/
+/***************************** AboutUs *****************************/
+.bodyAboutus {
+  background-color: #0a141d;
+}
+
+.encabezadoAboutus {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 25px;
+}
+
+.principal1 {
+  margin: 5px;
+  font-size: 90px;
+  color: white;
+}
+
+.principal2 {
+  margin: 5px;
+  font-style: italic;
+  color: #9b1222;
+}
+
+.principal3 {
+  margin-top: 15px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+  width: 250px;
+  transition: 0.3s;
+}
+.principal3:hover {
+  background: #fff;
+  color: #000;
+}
+
+.principal4 {
+  margin-top: 15px;
+  font-size: 60px;
+  color: white;
+  letter-spacing: 5px;
+}
+
+/***************************** About us FIN *****************************/
+/***************************** APP *****************************/
+.bodyApp {
+  background-color: #0a141d;
+}
+
+.tituloApp {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+  color: white;
+  font-style: italic;
+}
+
+.AppUs {
+  color: #b70e21;
+}
+
+.installbtn {
+  width: 350px;
+  height: 115px;
+  font-size: 30px;
+  border-radius: 15px;
+  color: white;
+  background: linear-gradient(90deg, rgb(175, 175, 175) 0%, rgb(140, 140, 140) 100%);
+  border: solid #000;
+  -webkit-animation: pulse 1.5s infinite;
+          animation: pulse 1.5s infinite;
+}
+
+.parrafoInstall {
+  color: white;
+  width: 350px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.botonyparrafo {
+  margin-left: 150px;
+  margin-top: 200px;
+}
+
+.mainApp {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.videoapp {
+  margin-top: 110px;
+}
+
+/***************************** APP FIN *****************************//*# sourceMappingURL=style.css.map */
