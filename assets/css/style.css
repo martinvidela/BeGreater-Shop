@@ -144,10 +144,10 @@
 }
 
 /***************************** MERCH FIN ****************************/
-/**************************** CONTACT ****************************/
 .mainContact {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .spanus {
@@ -158,10 +158,52 @@
   color: #333;
 }
 
-.cajaForm {
-  background-color: rgba(51, 51, 51, 0.269);
-  border-radius: 25px;
+.caja1 {
+  padding: 40px;
+}
+
+.form {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.107);
+  border-radius: 5%;
+  width: 850px;
+  height: 820px;
   margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 50px;
+  grid-template-areas: "nombre apellido" "email    email" "mensaje mensaje" "enviar enviar";
+}
+.form label {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 10px;
+}
+.form label .controls {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: rgb(63, 94, 251) 1px solid;
+  margin-bottom: 15px;
+  color: rgb(186, 186, 186);
+}
+.form label .controls:focus {
+  outline-style: none;
+}
+.form label .controls textarea:focus {
+  outline-style: none;
+}
+@media (max-width: 900px) {
+  .form {
+    width: 100vh;
+    margin: 20px 0px;
+    margin-bottom: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nombre" "apellido" "email" "mensaje" "enviar";
+  }
 }
 
 .contactTitulo {
@@ -190,6 +232,13 @@
   box-shadow: 0 0 0 0 rgb(0, 0, 0);
   -webkit-animation: pulse 1.5s infinite;
   animation: pulse 1.5s infinite;
+}
+@media (max-width: 900px) {
+  .btnForm {
+    margin-top: 0;
+    margin-bottom: 0px;
+    height: 50px;
+  }
 }
 
 @-webkit-keyframes pulse {
