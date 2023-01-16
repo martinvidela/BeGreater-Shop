@@ -55,32 +55,47 @@
 
     </header>
 
-    <main class="mainContact">
-        <div class="caja1">
+    <main>
+        <section class="d-flex justify-content-center">
+            <div class="card col-sm-6 p-3 bg-transparent text-light">
+                <div class="mb-2">
+                    <form action="">
+                        <div class="mb-2">
+                            <label for="nombre">Nombre*</label>
+                            <input type="text" class="form-control" name="nombre" id="nombre"
+                                placeholder="Ingrese nombre" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="apellido">Apellido*</label>
+                            <input type="text" class="form-control" name="apellido" id="apellido"
+                                placeholder="Ingrese apellido" req>
+                        </div>
+                        <div class="mb-2">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="email" id="email"
+                                placeholder="Ingrese email">
+                        </div>
+                        <div class="mb-2">
+                            <div>
+                            <label for="sexo">Sexo</label>
+                        </div>
+                            <input type="radio" name="sexo" id="sexo" value="masculino"> Masculino
+                            <input type="radio" name="sexo" id="sexo" value="femenino"> Femenino
+                            <input type="radio" name="sexo" id="sexo" value="omitir"> Omitir
+                        </div>
+                        <div class="mb-2">
+                            <label for="mensaje"> Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" placeholder="Rellene el campo de texto" class="form-control"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btnForm w-100">SUMBIT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-            <form class="form" action="">
-                <label for=""> Name*
-                    <input class="controls" type="text" name="nombres" id="nombres" required>
-                </label>
-                <label for=""> Last Name*
-                    <input class="controls" type="text" name="apellidos" id="apellidos" required>
-                </label>
-                <label for=""> Email
-                    <input class="controls" type="email" name="correo" id="correo" required>
-                </label>
-                <label for=""> Message
-                    <textarea class="controls" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                    <button type="submit" class="btnForm">Send</button>
-            </form>
 
-        </div>
-
-
-
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107134.7439401323!2d-60.766679105684574!3d-32.95204571141155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539335d7d75b%3A0xec4086e90258a557!2sRosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1673487970572!5m2!1ses!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         <div class="separacion"></div>
 
