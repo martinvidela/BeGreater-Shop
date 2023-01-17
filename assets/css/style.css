@@ -78,7 +78,39 @@
 
 .separacion {
   background-color: #0a141d;
-  height: 15px;
+  height: 1px;
+}
+
+.botonsuscribe {
+  border-radius: 30px;
+  border: 0;
+  padding: 5px;
+  background: rgb(238, 174, 202);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  width: 150px;
+  height: 60px;
+}
+
+.suscribe {
+  margin: 15px;
+  height: 220px;
+  background-color: #e26e6c;
+  text-align: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.suscribe .textosuscribe {
+  font-weight: bold;
+}
+.suscribe .parrafosuscribe {
+  font-style: italic;
+  font-size: 19px;
+}
+@media screen and (min-width: 992px) {
+  .suscribe {
+    padding: 30px;
+  }
 }
 
 .sneakers {
@@ -86,7 +118,8 @@
   font-size: 50px;
   text-align: center;
   letter-spacing: 15px;
-  margin: 25px;
+  margin-top: 55px;
+  margin-bottom: 55px;
 }
 
 .btnHome {
@@ -134,7 +167,7 @@
   width: 450px;
 }
 #tarjetasindex:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /**************************** INDEX FIN ****************************/
