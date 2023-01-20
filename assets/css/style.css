@@ -94,11 +94,12 @@
 
 .suscribe {
   margin: 15px;
-  height: 220px;
+  height: 260px;
   background-color: #e26e6c;
   text-align: center;
   align-items: center;
   border-radius: 15px;
+  overflow: hidden;
 }
 .suscribe .textosuscribe {
   font-weight: bold;
