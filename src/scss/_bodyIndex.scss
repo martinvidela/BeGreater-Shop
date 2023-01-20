@@ -21,6 +21,10 @@
   height: 60px;
 }
 
+.bodyIndex{
+  overflow-x:hidden;
+  position: relative;
+}
 
 .suscribe {
   margin: 15px;
@@ -29,7 +33,7 @@
   text-align: center;
   align-items: center;
   border-radius: 15px;
-  overflow: hidden;
+
   .textosuscribe{
     font-weight: bold;
     
