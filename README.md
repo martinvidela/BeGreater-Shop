@@ -1,4 +1,4 @@
-# Proyecto-CODER
+# Proyecto-CODER (Desarollo Web)
 
 Formato: link al repositorio en Github donde están todos los archivos del proyecto (para ver el código). link al sitio web funcionando online (Github Pages o Hosting). Sugerencia: Realiza las correcciones que hayas recibido en la corrección de la última pre-entrega. Recuerda que tienes 20 días para entregarlo. Luego, se inhabilitará la entrega en la plataforma.
 
