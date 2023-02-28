@@ -5,3 +5,6 @@ while (nombreIngreso == "" || nombreIngreso == null) {
 }
 
 alert("Bienvenido " + nombreIngreso); 
+
+
+let ala = menos
