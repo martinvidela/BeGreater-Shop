@@ -1,11 +1,8 @@
-/**************************** CONTACT ****************************/
-.caja {
-    padding: 50px;
-}
 
 .mainContact {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .spanus {
@@ -20,13 +17,15 @@
     text-align: center;
     font-weight: bolder;
     font-size: 90px;
-    color: white;
+    color: $titulocolor;
     margin: 15px;
     font-family: "Quicksand", sans-serif;
 }
 
 .btnForm {
-    margin-top: 15px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+
     height: 100px;
     background: linear-gradient(102deg, #4551b5 40%, #543fd7 60%);
     font-size: 20px;
@@ -77,58 +76,5 @@
     }
 }
 
-
-
-
-.form {
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.107);
-    border-radius: 5%;
-    width: 850px;
-    height: 820px;
-    margin-bottom: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 50px;
-    grid-template-areas: "nombre apellido" "email    email" "mensaje mensaje" "enviar enviar";
-    label {
-        display: flex;
-        flex-direction: column;
-        padding: 30px;
-        margin: 10px;
-        &:focus{
-            outline-style: none;
-        }
-        textarea:focus {
-        outline-style: none;
-    }
-}
-}
-
-.form label:nth-child(1) {
-    grid-area: nombre;
-}
-
-.form label:nth-child(2) {
-    grid-area: apellido;
-}
-
-.form label:nth-child(3) {
-    grid-area: email;
-}
-
-.form label:nth-child(4) {
-    grid-area: mensaje;
-}
-
-.controls {
-    width: 100%;
-    padding: 10px;
-    background-color: transparent;
-    border: none;
-    border-bottom: rgb(63, 94, 251) 1px solid;
-    margin-bottom: 15px;
-    color: rgb(186, 186, 186);
-}
 
 /***************************** CONTACT *****************************/

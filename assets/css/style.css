@@ -78,7 +78,44 @@
 
 .separacion {
   background-color: #0a141d;
-  height: 15px;
+  height: 1px;
+}
+
+.botonsuscribe {
+  border-radius: 30px;
+  border: 0;
+  padding: 5px;
+  background: rgb(238, 174, 202);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  width: 150px;
+  height: 60px;
+}
+
+.bodyIndex {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.suscribe {
+  margin: 15px;
+  height: 260px;
+  background-color: #e26e6c;
+  text-align: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.suscribe .textosuscribe {
+  font-weight: bold;
+}
+.suscribe .parrafosuscribe {
+  font-style: italic;
+  font-size: 19px;
+}
+@media screen and (min-width: 992px) {
+  .suscribe {
+    padding: 30px;
+  }
 }
 
 .sneakers {
@@ -86,7 +123,8 @@
   font-size: 50px;
   text-align: center;
   letter-spacing: 15px;
-  margin: 25px;
+  margin-top: 55px;
+  margin-bottom: 55px;
 }
 
 .btnHome {
@@ -134,7 +172,7 @@
   width: 450px;
 }
 #tarjetasindex:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /**************************** INDEX FIN ****************************/
@@ -144,14 +182,10 @@
 }
 
 /***************************** MERCH FIN ****************************/
-/**************************** CONTACT ****************************/
-.caja {
-  padding: 50px;
-}
-
 .mainContact {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .spanus {
@@ -172,7 +206,8 @@
 }
 
 .btnForm {
-  margin-top: 15px;
+  margin-top: 18px;
+  margin-bottom: 10px;
   height: 100px;
   background: linear-gradient(102deg, #4551b5 40%, #543fd7 60%);
   font-size: 20px;
@@ -217,57 +252,6 @@
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
-.form {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.107);
-  border-radius: 5%;
-  width: 850px;
-  height: 820px;
-  margin-bottom: 25px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 50px;
-  grid-template-areas: "nombre apellido" "email    email" "mensaje mensaje" "enviar enviar";
-}
-.form label {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  margin: 10px;
-}
-.form label:focus {
-  outline-style: none;
-}
-.form label textarea:focus {
-  outline-style: none;
-}
-
-.form label:nth-child(1) {
-  grid-area: nombre;
-}
-
-.form label:nth-child(2) {
-  grid-area: apellido;
-}
-
-.form label:nth-child(3) {
-  grid-area: email;
-}
-
-.form label:nth-child(4) {
-  grid-area: mensaje;
-}
-
-.controls {
-  width: 100%;
-  padding: 10px;
-  background-color: transparent;
-  border: none;
-  border-bottom: rgb(63, 94, 251) 1px solid;
-  margin-bottom: 15px;
-  color: rgb(186, 186, 186);
-}
-
 /***************************** CONTACT *****************************/
 /***************************** AboutUs *****************************/
 .bodyAboutus {
@@ -276,7 +260,7 @@
 
 .encabezadoAboutus {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 50px;
   font-size: 25px;
 }
 
@@ -324,10 +308,11 @@
 
 .tituloApp {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 50px;
   color: white;
   font-style: italic;
+  margin-bottom: 15px;
 }
 
 .AppUs {
@@ -335,6 +320,7 @@
 }
 
 .installbtn {
+  margin-top: 150px;
   width: 350px;
   height: 115px;
   font-size: 30px;
@@ -349,23 +335,24 @@
 .parrafoInstall {
   color: white;
   width: 350px;
+  font-size: 17px;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 150px;
 }
 
-.botonyparrafo {
-  margin-left: 150px;
-  margin-top: 200px;
-}
-
-.mainApp {
+.botoninstall {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 100px;
+  flex-direction: column;
+  margin-bottom: 70px;
+  justify-content: center;
+  align-items: center;
 }
 
-.videoapp {
-  margin-top: 110px;
+.iconosmarca {
+  letter-spacing: 5px;
+  color: white;
+  font-size: 45px;
 }
 
 /***************************** APP FIN *****************************//*# sourceMappingURL=style.css.map */
